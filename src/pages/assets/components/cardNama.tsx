@@ -5,22 +5,22 @@ function Cardnama(props) {
   return (
     <View style={[styles.container, props.style]}>
       <View style={styles.rect}>
-        <View style={styles.image1Row}>
+        <View style={styles.image2Row}>
           <Image
-            source={require("../images/image.jpg")}
-            resizeMode="stretch"
-            style={styles.image1}
+            source={require("../images/Mark.png")}
+            resizeMode="contain"
+            style={styles.image2}
           ></Image>
           <View style={styles.muhammadSamsul2Column}>
             <Text style={styles.muhammadSamsul2}>Muhammad Samsul</Text>
             <Text style={styles.pesilat1}>Pesilat</Text>
-          </View>
-        </View>
-        <View style={styles.rect2}>
-          <View style={styles.rayonRow}>
-            <Text style={styles.rayon}>Rayon</Text>
-            <Text style={styles.garis}>|</Text>
-            <Text style={styles.pacSukorejo}>PAC.Sukorejo</Text>
+            <View style={styles.rect2}>
+              <View style={styles.rayonRow}>
+                <Text style={styles.rayon}>Rayon</Text>
+                <Text style={styles.garis}>|</Text>
+                <Text style={styles.pacSukorejo}>PAC.Sukorejo</Text>
+              </View>
+            </View>
           </View>
         </View>
       </View>
@@ -36,63 +36,52 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(255,255,255,1)",
     borderRadius: 25
   },
-  image1: {
+  image2: {
     width: 74,
     height: 74,
-    borderRadius: 50
+    borderRadius: 10
   },
   muhammadSamsul2: {
-    fontFamily: "inter-600",
+    fontFamily: "Inter-SemiBold",
     color: "#293462",
     fontSize: 17
   },
   pesilat1: {
-    fontFamily: "inter-regular",
+    fontFamily: "Inter-Regular",
     color: "rgba(41,52,98,1)",
     marginTop: 9
-  },
-  muhammadSamsul2Column: {
-    width: 161,
-    marginLeft: 2,
-    marginTop: 15,
-    marginBottom: 13
-  },
-  image1Row: {
-    height: 74,
-    flexDirection: "row",
-    marginTop: 10,
-    marginLeft: 17,
-    marginRight: 92
   },
   rect2: {
     width: 184,
     height: 26,
-    backgroundColor: "rgba(217,217,217,1)",
+    backgroundColor: "rgba(255,255,255,1)",
     borderRadius: 20,
     shadowColor: "rgba(0,0,0,1)",
     shadowOffset: {
-      width: 0,
-      height: 3
+      height: 2,
+      width: 0
     },
     elevation: 5,
-    shadowOpacity: 0.25,
+    shadowOpacity: 0.2,
     shadowRadius: 0,
+    borderWidth: 1,
+    borderColor: "#cccccc",
     flexDirection: "row",
-    marginLeft: 93
+    marginTop: 13
   },
   rayon: {
-    fontFamily: "inter-regular",
+    fontFamily: "Inter-Regular",
     color: "rgba(41,52,98,1)",
     fontSize: 13
   },
   garis: {
-    fontFamily: "inter-regular",
+    fontFamily: "Inter-Regular",
     color: "rgba(41,52,98,1)",
     fontSize: 13,
     marginLeft: 28
   },
   pacSukorejo: {
-    fontFamily: "inter-regular",
+    fontFamily: "Inter-Regular",
     color: "rgba(41,52,98,1)",
     fontSize: 13,
     marginLeft: 9
@@ -104,6 +93,18 @@ const styles = StyleSheet.create({
     marginRight: 11,
     marginLeft: 12,
     marginTop: 4
+  },
+  muhammadSamsul2Column: {
+    width: 184,
+    marginLeft: 10,
+    marginTop: 11
+  },
+  image2Row: {
+    height: 96,
+    flexDirection: "row",
+    marginTop: 14,
+    marginLeft: 9,
+    marginRight: 69
   }
 });
 

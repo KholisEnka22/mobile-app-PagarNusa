@@ -52,16 +52,19 @@ function Home(props) {
                                 style={styles.icon}>
                             </FontAwesomeIcon>
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.button2}>
+                        <TouchableOpacity style={styles.button2}
+                            onPress={() => props.navigation.navigate("Struktur")}>
                             <Icon name="sitemap" style={styles.icon2} />
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.button3}>
+                        <TouchableOpacity style={styles.button3}
+                            onPress={() => props.navigation.navigate("Galeri")}>
                             <FontAwesomeIcon
                                 name="photo"
                                 style={styles.icon3}
                             ></FontAwesomeIcon>
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.button4}>
+                        <TouchableOpacity style={styles.button4}
+                            onPress={() => props.navigation.navigate("Profil")}>
                             <IoniconsIcon name="md-person" style={styles.icon4}></IoniconsIcon>
                         </TouchableOpacity>
                     </View>
